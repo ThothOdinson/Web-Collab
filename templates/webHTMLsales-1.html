@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sales Hub</title>
+    <link rel="stylesheet" href="C:/Users/tjone/OneDrive/Documents/GitHub/website-repos1/static/webCSSsales-1.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Sales Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="webHTML-1.html">Home</a></li>
+                    <li><a href="webHTMLsales-1.html">Sales Hub</a></li>
+                    <li><a href="/register">Register</a></li>
+                    <li><a href="/login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="sales-container">
+            <h2>Our Partners</h2>
+            {% for item in items %}
+            <div class="sales-item">
+                <h3>{{ item.name }}</h3>
+                <a href="{{ item.link }}">Shop Now</a>
+            </div>
+            {% endfor %}
+        </section>
+
+        <section class="tech-links">
+            <h4>Tech Links</h4>
+            <ul>
+                <li><a href="https://www.microsoft.com/en-us/store/b/sale" target="_blank">Microsoft Devices</a></li>
+                <li><a href="https://www.microsoft.com/en-us/store/b/software" target="_blank">Microsoft Software</a></li>
+                <li><a href="https://www.amazon.com/" target="_blank">Amazon</a></li>
+                <li><a href="https://store.google.com/" target="_blank">Google Tech</a></li>
+                <li><a href="https://www.bestbuy.com/" target="_blank">Best Buy</a></li>
+                <li><a href="https://www.newegg.com/" target="_blank">NewEgg</a></li>
+                <li><a href="https://www.microcenter.com/" target="_blank">Micro Center</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Newlife Collab. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

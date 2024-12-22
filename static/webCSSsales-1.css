@@ -1,0 +1,126 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Black background */
+    color: #ffd700; /* Gold text */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #9b4dca; /* Purple color for headings */
+}
+
+a {
+    color: #9b4dca; /* Purple color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background-color: #181818;
+    padding: 15px 0;
+    border-bottom: 2px solid #ffd700; /* Gold border */
+}
+
+header h1 {
+    color: #ffd700; /* Gold color for header text */
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #ffd700; /* Gold color for navigation links */
+}
+
+nav ul li a:hover {
+    color: #9b4dca; /* Purple color on hover */
+}
+
+/* Sales Container */
+.sales-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.sales-item {
+    background-color: #2e2e2e;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+.sales-item a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ffd700;
+}
+
+button {
+    background-color: #9b4dca;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #7a2b96;
+}
+
+/* Tech Links */
+.tech-links {
+    background-color: #2e2e2e;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.tech-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tech-links ul li {
+    flex: 1 1 30%;
+    margin: 10px;
+}
+
+.tech-links ul li a {
+    color: #9b4dca;
+}
+
+/* Footer */
+footer {
+    background-color: #181818;
+    padding: 10px 0;
+    text-align: center;
+    color: #ffd700;
+}

@@ -1,0 +1,106 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #9b4dca; /* Purple color for headings */
+}
+
+a {
+    color: #9b4dca;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background-color: #181818;
+    padding: 15px 0;
+}
+
+header h1 {
+    display: inline-block;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Section Styles */
+section {
+    margin-top: 40px;
+}
+
+.topic-list, .career-paths {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.topic-item, .career-path {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* Contact Form */
+form {
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #9b4dca;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #7a2b96;
+}
+
+/* Footer */
+footer {
+    background-color: #181818;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 40px;
+}
