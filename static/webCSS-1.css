@@ -39,10 +39,10 @@ header h1 {
 
 nav ul {
     list-style-type: none;
-    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
     margin: 0;
     padding: 0;
-    float: right;
 }
 
 nav ul li {
