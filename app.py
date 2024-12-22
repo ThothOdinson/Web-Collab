@@ -25,7 +25,7 @@ def home():
         if user:
             return render_template('dashboard.html', username=user.username, progress=user.progress)
         session.pop('user_id', None)  # Remove invalid session
-    return render_template('index.html')
+    return render_template('webHTML-1.html')
 
 @app.route('/sales')
 def sales():
