@@ -99,6 +99,25 @@ def update_progress():
     flash('You need to log in to update progress!')
     return redirect(url_for('login'))
 
+@app.route('/dashboard')
+def dashboard():
+    if 'user_id' in session:
+        user = User.query.get(session['user_id'])
+        return render_template('dashboard.html', username=user.username)
+    return redirect(url_for('login'))
+
+@app.route('/topics')
+def topics():
+    return redirect(url_for('home') + '#topics')
+
+@app.route('/career-paths')
+def career_paths():
+    return redirect(url_for('home') + '#career-paths')
+
+@app.route('/contact')
+def contact():
+    return redirect(url_for('home') + '#contact')
+
 if __name__ == '__main__':
     db.create_all()  # Ensure the database tables are created
     app.run(debug=True)

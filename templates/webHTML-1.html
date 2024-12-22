@@ -6,23 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Education Hub</title>
-    <link rel="stylesheet" href="C:\Users\tjone\OneDrive\Documents\GitHub\Web-Collab\static\webCSS-1.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='webCSS-1.css') }}">
 </head>
-
 <body>
     <header>
         <div class="container">
-            <h1>Education Hub</h1>
+            <h1>Sales Hub</h1>
             <nav>
                 <ul>
-                    <li><a href="webHTML-1.html">Home</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="webHTMLsales-1.html">Sales Hub</a></li>
-                    <li><a href="register.html">Register</a></li>
-                    <li><a href="Dashboard.html">Dashboard</a></li>
-                    <li><a href="webHTML-1.html#topics">Topics</a></li>
-                    <li><a href="webHTML-1.html#career-paths">Career Paths</a></li>
-                    <li><a href="webHTML-1.html#contact">Contact</a></li>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('login') }}">Login</a></li>
+                    <li><a href="{{ url_for('sales') }}">Sales Hub</a></li>
+                    <li><a href="{{ url_for('register') }}">Register</a></li>
+                    <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+                    <li><a href="{{ url_for('home') }}#topics">Topics</a></li>
+                    <li><a href="{{ url_for('home') }}#career-paths">Career Paths</a></li>
+                    <li><a href="{{ url_for('home') }}#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
