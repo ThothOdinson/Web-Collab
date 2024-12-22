@@ -18,7 +18,7 @@ class User(db.Model):
     progress = db.Column(db.String(500), default="")  # Track progress as a JSON string
 
 # Routes
-@app.route('/')
+@app.route('/home')
 def home():
     if 'user_id' in session:
         user = User.query.get(session['user_id'])
